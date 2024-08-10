@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="{{ .Site.LanguageCode }}">
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="color-scheme" content="dark light">
+    <meta name="description"
+      content="{{ with .Description }}{{ . }}{{ else }}{{if .IsPage}}{{ .Summary }}{{ else }}{{ with .Site.Params.description }}{{ . }}{{ end }}{{ end }}{{ end }}">
+    {{ if .IsHome -}}
+    <meta name="keywords" content="{{ range .Keywords }}{{ . }}{{ end }}">
+    {{ end }}
+    {{- template "_internal/schema.html" . }}
+    {{- template "_internal/opengraph.html" . }}
+    {{- template "_internal/twitter_cards.html" . }}
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#54bab9">
+    <link rel="shortcut icon" href="/favicon.ico">
+    {{ $title := print .Title " · " .Site.Title }}
+    {{ if .IsHome }}{{ $title = .Site.Title }}{{ end }}
+    <title>{{ $title }}</title>
+
+    <meta name="HandheldFriendly" content="True" />
+
+    {{ $styles := resources.Get "scss/main.scss" | resources.ExecuteAsTemplate
+    "style.main.scss" . | toCSS | minify | fingerprint }}
+    <link rel="stylesheet" href="{{ $styles.Permalink }}" />
+
+    <!-- goatcounter -->
+    <script data-goatcounter="https://fanajib5.goatcounter.com/count"
+      async src="https://gc.zgo.at/count.js"></script>
+
+  </head>
+
+  <body class="{{ block "body_class" . }} {{ end }}">
+
+    <div class="site-wrapper">
+      {{- block "main" . }}{{- end }}
+
+      <footer class="site-footer outer">
+        <div class="site-footer-content inner">
+          <section class="copyright"><a href="{{ .Site.BaseURL }}">{{
+              .Site.Title }}</a> &copy;
+            {{ .Date.Format "2006" }}</section>
+          <nav class="site-footer-nav">
+            <a href="{{ .Site.BaseURL }}">Latest Posts</a>
+            {{ if .Site.Params.facebook }}<a href="{{ .Site.Params.facebook }}"
+              target="_blank"
+              rel="noopener">Facebook</a>{{ end }}
+            {{ if .Site.Params.twitter }}<a href="{{ .Site.Params.twitter }}"
+              target="_blank"
+              rel="noopener">Twitter</a>{{ end }}
+            {{ if .Site.Params.github }}<a href="{{ .Site.Params.github }}"
+              target="_blank"
+              rel="noopener">Github</a>{{ end }}
+            <a href="https://jonathanjanssens.com" target="_blank"
+              rel="noopener" style="opacity: 0.5;">Hugo Casper3 by
+              Jonathan Janssens</a>
+          </nav>
+        </div>
+      </footer>
+
+    </div>
+
+  </body>
+
+</html>

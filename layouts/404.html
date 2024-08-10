@@ -1,0 +1,26 @@
+{{ define "body_class" }} tag-template  {{ end }}
+
+{{ define "main" }}
+
+<header class="site-header">
+    {{- partial "site-header.html" $ -}}
+
+    {{- partial "header-background.html" $ -}}
+        <div class="inner site-header-content">
+            <h1 class="site-title">{{ .Title }}</h1>
+            <h2 class="site-description">
+                Silakan kembali ke <a href="/">Beranda</a> atau menu yang lain.
+            </h2>
+        </div>
+    </div>
+</header>
+
+<main id="site-main" class="site-main outer">
+    <div class="inner">
+        <div class="post-feed">
+            
+        </div>
+    </div>
+</main>
+
+{{ end }}

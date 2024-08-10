@@ -6,6 +6,7 @@ description: "Blog pribadi dan portofolio Faiq Najib"
 keywords: "Faiq Najib,Fanajib5,blog,situs web pribadi,blog independen Indonesia"
 draft: false
 comments: false
+feature_image: "/images/topography.svg"
 ---
 
 Halo! Selamat datang. Di sinilah saya membuat blog semua yang saya inginkan, lihat halaman “[About](/about/)” untuk info lebih lanjut. Jika Anda punya ide, jangan ragu untuk [hubungi saya](/about/#find-me-on) atau tinggalkan komentar di halaman “[Link](/link/)”.
