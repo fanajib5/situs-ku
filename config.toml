@@ -1,24 +1,26 @@
 baseURL = "/"
-title = "Blogfolio Najib"
-staticDir = "static"
-languageCode = "id-ID"
 defaultContentLanguage = "id"
+languageCode = "id-ID"
+staticDir = "static"
+title = "Blogfolio Najib"
 # defaultContentLanguageInSubdir = true
-copyright = "This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License."
-theme = "hugo-casper3"
+background = "images/topography.svg"
 canonifyURLs = true
+copyright = "This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License."
 enableRobotsTXT = true
+feature_image = "images/topography.svg"
+theme = "hugo-casper3"
 
 enableGitInfo = true
 
 [languages]
 [languages.id]
-languageName = "Bahasa Indonesia"
 languageCode = "id-ID"
+languageName = "Bahasa Indonesia"
 weight = 1
 [languages.en]
-languageName = "English"
 languageCode = "en-US"
+languageName = "English"
 weight = 2
 
 [markup]
@@ -55,7 +57,11 @@ tabWidth = 4
 #   tag = "tags"
 
 [params]
+background = "images/topography.svg"
+facebook = "fanajib5"
+github = "fanajib5"
 images = ["apple-touch-icon.png"]
+twitter = "fanajib5"
 
 [[params.author]]
 name = "Faiq Najib"

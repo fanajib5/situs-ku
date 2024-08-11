@@ -1,0 +1,42 @@
+.post-content {
+  text-justify: inter-ideograph; //For IE/Edge
+  overflow-wrap: break-word;
+
+  figure {
+    height: auto;
+    margin: 0;
+    text-align: center;
+  }
+
+  figcaption>p {
+    margin-top: .1rem;
+    margin-bottom: 1rem;
+    font-size: 75%;
+    font-style: italic;
+    color: var(--c-txt-alt);
+  }
+
+  figure.left {
+    float: left;
+    margin-right: 1em;
+    max-width: 50%;
+  }
+
+  figure.right {
+    float: right;
+    margin-left: 1em;
+    max-width: 50%;
+  }
+
+  img {
+    display: inline-block;
+    max-width: 100%;
+    height: auto;
+    margin: auto;
+  }
+
+  video,
+  iframe {
+    max-width: 100%;
+  }
+}

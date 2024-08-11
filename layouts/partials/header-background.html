@@ -1,3 +1,8 @@
+{{ $background := .Params.feature_image }}
+{{ if not $background }}
+    {{ $background = .Site.Params.background }}
+{{ end }}
+{{ .Scratch.Set "background" $background }}
 {{ if .Scratch.Get "background" }}
     <style type="text/css">
         .responsive-header-img {

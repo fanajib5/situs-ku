@@ -11,6 +11,7 @@ tags = [
     "text",
 ]
 feature_image = "/images/jason-briscoe-amLfrL8LGls-unsplash.jpg"
+draft = true
 +++
 
 Lorem est tota propiore conpellat pectoribus de

@@ -1,4 +1,6 @@
-{{ define "body_class" }} post-template {{ end }}
+{{ define "body_class" }} post-template
+
+{{ end }}
 
 {{ define "main" }}
 
@@ -14,69 +16,120 @@
 
       <header class="post-full-header">
 
+        {{ if .Params.toc }}
+        <style>
+          .gh-toc {
+            margin-top: 4vmin;
+            /* Aligns the TOC with the beginning of content */
+          }
+
+          @media (min-width: 1300px) {
+            .gh-toc {
+              position: sticky;
+              /* On larger screens, TOC will stay in the same spot on the page */
+              top: 4vmin;
+              grid-column: wide-start / main-start;
+              /* Place the TOC to the left of the content */
+            }
+          }
+
+          .gh-toc>.toc-list {
+            position: relative;
+            overflow: hidden;
+          }
+
+          .toc-list {
+            list-style: none;
+          }
+
+          .gh-toc .is-active-link::before {
+            background-color: var(--ghost-accent-color);
+            /* Defines TOC accent color based on Accent color set in Ghost Admin */
+          }
+        </style>
+        {{ end }}
         {{ with .Params.tags }}
-        {{ $primaryTag := (index . 0) }}
-        <section class="post-full-tags">
-          <a href="{{ "/tags/" | relLangURL }}{{ $primaryTag | urlize }}">{{
-            $primaryTag }}</a>
-        </section>
+          {{ $tagsLen := len . }}
+          <section class="post-full-tags">
+            {{- range $index, $tag := . -}}
+              <a href="{{ "/tags/" | relLangURL }}{{ . | urlize }}">{{ . }}</a>
+              {{ if lt (add $index 1) $tagsLen }},&nbsp;{{ end }}
+            {{ end }}
+          </section>
         {{ end }}
 
-        <h1 class="post-full-title">{{ .Title }}</h1>
-
+        <h1 class="post-full-title">
+          {{ .Title }}
+        </h1>
         {{ if .Param "summary" }}
-        <p class="post-full-custom-excerpt">{{ .Summary }}</p>
+        <p class="post-full-custom-excerpt">
+          {{ .Summary }}
+        </p>
         {{ end }}
 
         <div class="post-full-byline">
           <section class="post-full-byline-content">
-
             {{ if .Param "author" }}
             {{- partial "post-author.html" . -}}
             {{ end }}
 
             <section class="post-full-byline-meta">
               {{ if .Param "author" }}
-              <h4 class="author-name">{{ .Param "author" }}</h4>
+              <h4 class="author-name">
+                {{ .Param "author" }}
+              </h4>
               {{ end }}
               <div class="byline-meta-content">
-                <time class="byline-meta-date"
-                  datetime="{{.Date.Format "2006-31-01"}}">{{.Date.Format
+                <time class="byline-meta-date" datetime="{{.Date.Format "2006-31-01"}}">{{.Date.Format
                   "2 January 2006"}}</time>
-                <span class="byline-reading-time"><span
-                    class="bull">&bull;</span> {{ .ReadingTime }} {{
+                <span class="byline-reading-time"><span class="bull">&bull;</span>
+                  {{ .ReadingTime }}
+                  {{
                   $readingTime := .ReadingTime }}
-                  {{ if eq $readingTime 1 }}min{{ else }}mins{{ end }}
+                  {{ if eq $readingTime 1 }}min
+                  {{ else }}mins
+                  {{ end }}
                   read<span class="bull">&bull;</span>
-                  {{ if .WordCount }}{{ .WordCount }} words{{ end }}<span
-                    class="bull">&bull;
-                    {{ if .GitInfo }}GIT{{ else }}ora git{{ end }}
+                  {{ if .WordCount }}
+                  {{ .WordCount }} words
+                  {{ end }}<span class="bull">&bull;
+                    {{ if .GitInfo }}GIT
+                    {{ else }}ora git
+                    {{ end }}
                   </span>
-                </div>
-              </section>
-
+              </div>
             </section>
 
-          </div>
-        </header>
+          </section>
 
-        {{ if .Param "feature_image" }}
-        <figure class="post-full-image">
-          <img src="{{ .Param "feature_image" }}" alt="{{ .Title }}" />
-        </figure>
-        {{ end }}
+        </div>
+      </header>
+      {{ if .Param "feature_image" }}
+      <figure class="post-full-image">
+        <img src="{{ .Param "feature_image" }}" alt="{{ .Title }}" />
+      </figure>
+      {{ end }}
 
-        <section class="post-full-content">
-          <div class="post-content">
-            {{ .Content }}
-          </div>
-        </section>
+      <section class="post-full-content">
+        <div class="post-content">
+          {{ if .Params.toc }}
+          <aside id="toc">
+            <div class="toc-title gh-toc" style="font-style: italic;">
+              <h2>Table of Contents</h2>
+            </div>
+            {{ .TableOfContents }}
+          </aside>
+          <hr />
+          {{ end}}
+          {{ .Content }}
+        </div>
+      </section>
 
-      </article>
+    </article>
 
-    </div>
-  </main>
+  </div>
+</main>
 
-  {{- partial "post-navigation.html" . -}}
+{{- partial "post-navigation.html" . -}}
 
-  {{ end }}
+{{ end }}

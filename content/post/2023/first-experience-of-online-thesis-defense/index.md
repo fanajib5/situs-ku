@@ -1,12 +1,13 @@
 ---
-title: "Sidang akhir daring. Menjadi angaktan lulusan pandemi"
+title: "Sidang akhir daring dan angaktan lulusan pandemi"
 url: ""
 description: "Sebuah cerita pengalaman penulis dalam melaksanakan sidang akhir secara online."
 author: "Faiq Najib"
 date: 2023-07-24T17:32:00+07:00
 lastmod: 2023-07-23T11:58:34.039+07:00
 draft: false
-toc: true
+feature_image: /images/paul-hanaoka-w2DsS-ZAP4U-unsplash.jpg
+toc: false
 comments: true
 images:
 tags:
@@ -14,7 +15,9 @@ tags:
   - personal
 ---
 
-Sidang tugas akhir atau skripsi menjadi momen yang berkesan bagi banyak mahasiswa. Tak terkecuali saya. Apalagi dilakukan secara daring untuk pertama kalinya.
+Sidang tugas akhir atau skripsi menjadi momen yang berkesan bagi mahasiswa. Apalagi dilakukan secara daring untuk pertama kalinya.
+<!--more-->
+---
 
 ## Luring dan _Jinx_
 
@@ -22,7 +25,7 @@ Semua berawal dari gurauan kami (saya dan teman-teman kos) tepat saat pekan ujia
 
 Saya dan ketiga teman yang lain sepertinya sepemikiran. Karena menurut kami akan disayangkan biaya yang harus dikeluarkan kalau saat itu pulang kampung dan nanti selepas ujian akhir juga pulang kampung lagi. Sehingga tanpa sinyal pun, kami sepakat bahwa lebih baik sekalian pulang kampung ketika liburan semester saja.
 
-Namun, Allah berkehendak lain. Malam hari setelah ujian terakhir, sebuah kabar yang sangat asing tiba di telinga kami semua. Ya, berita wabah penyakit. 
+Namun, Allah berkehendak lain. Malam hari setelah ujian terakhir, sebuah kabar yang sangat asing tiba di telinga kami semua. Ya, berita wabah penyakit.
 
 Dunia seakan menjadi seperti apa yang terjadi di dalam film _apocalypse_. Dari mulai info persebaran penyakit yang sangat cepat, hingga barang ajaib yang tiba-tiba menjadi langka dan mahal.
 
@@ -73,3 +76,5 @@ Kemudian, ungkapan bahwa "ucapan adalah doa" memang tidak dapat dipandang sebela
 Terima kasih penulis ucapkan bagi yang sudah tersasar ke sini dan membaca curahan hati ini hehe. Semoga Anda diberikan kesehatan dan rezeki yang berkah! Aamiin.
 
 Sekian. Salam.
+
+*Credit:* photo by <a href="https://unsplash.com/@plhnk?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Paul Hanaoka</a> on <a href="https://unsplash.com/photos/orange-and-white-tabby-cat-sitting-on-brown-wooden-table-in-kitchen-room-w2DsS-ZAP4U?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>

@@ -6,7 +6,8 @@ author: "Faiq Najib"
 date: 2023-07-23T18:55:34.039+07:00
 lastmod: 2023-07-23T11:58:34.039+07:00
 draft: false
-toc: true
+toc: false
+feature_image: /images/marek-studzinski--SydYyAP3d4-unsplash.jpg
 comments: true
 images:
 tags:
@@ -18,7 +19,7 @@ _Alhamdulillah_ berkat ridho Allah SWT, doa keluarga dan teman-teman, saya menye
 <!--more-->
 ---
 
-## Pertanyaan iseng dan dorongan dari orang tua
+## Pertanyaan iseng dan dorongan orang tua
 
 Semua berawal saat perkuliahan saya yang saat itu akan memasuki semester dua. Menurut peraturan di kampus, akan dijalankan proses pergantian dosen wali. Itu adalah dosen pembimbing tesislah yang akan menjadi dosen wali mahasiswa bimbingannya.
 
@@ -38,7 +39,7 @@ Mulai dari sinilah saya beranggapan bahwa, _oh mungkin kalau mahasiswa pascasarj
 
 Saya kembali teringat bahwa mahasiwa harus lebih mandiri ketika kuliah pascasarjana. Itulah apa yang dijelaskan saat orientasi awal dan juga kata [orang lain](https://catatan-dudihgustian.blogspot.com/2015/03/perbedaan-penelitian-s1-s2-dan-s3.html). Ungkapan itu juga yang menemani masa perkuliahan semester 2 saya.
 
-## Menjadi Seorang Deadliner
+## Menjadi seorang *deadliner*
 
 Tugas dan bobot kuliah yang berbeda semakin terasa saat semester 2 mulai berjalan. Ditambah saya yang masuk sebagai mahasiswa [RPL](https://www.its.ac.id/admission/program-rpl-coba/) (Rekognisi Pembelajaran Lampau), mengharuskan saya mengambil satu mata kuliah dari program S1.
 
@@ -60,7 +61,7 @@ Akhirnya, seminar proposal saya pun berhasil dilaksanakan dengan hasil revisi pa
 
 {{< figure src="seminar-proposal-tesis.webp" alt="foto seminar proposal tesis Faiq" caption="Seminar proposal tesis" >}}
 
-## Menjadi Seorang Deadliner (Lagi) yang Malas
+## Menjadi seorang leadliner (lagi) yang malas
 
 Singkat cerita, revisi draft proposal saya dapat diterima oleh para penguji. Meskipun disertai dengan beberapa catatan untuk pengerjaan tesis saya mendatang.
 
@@ -98,7 +99,7 @@ Hal itu tentu sangat berbeda dengan semua pengalaman saya yang sudah melaksanaka
 
 Dosen pembimbing yang sangat ketat dan memberikan "simulasi dunia nyata" (D3), hingga dosen pembimbing yang sibuk namun masih berusaha membagi waktu dengan mahasiswa yang beliau bimbing (S1). Keduanya sangat berbeda dengan dosen pembimbing saya sekarang. Entah itu karena sebagai _treatment_ beliau atau karena saya yang sudah pernah bekerja, jadi saya dianggap lebih bisa bertanggung jawab dibandingkan teman seangkatan yang rata-rata baru lulus semua. Ah tidak, itu sih saya yang _ge-er_.
 
-## Sidang Tesis (Ke-3)
+## Sidang tesis atau tugas akhir ke-3
 
 Saya beruntung karena masih mendapatkan kesempatan mendaftar sidang tesis di pekan terakhir. Terutama setelah menghubungi asisten laboratorium yang bertanggung jawab membantu untuk menguruskan jadwal sidang tesis saya.
 
@@ -116,7 +117,7 @@ Terlepas dari itu semua, saya bersyukur dapat melewati seminar akhir sidang tesi
 
 {{< figure src="seminar-akhir-tesis.webp" alt="foto seminar akhir tesis Faiq" caption="seminar akhir tesis" >}}
 
-## Pelajaran yang Dapat Diambil
+## Pelajaran yang dapat diambil
 
 Setelah melalui satu tahun ajaran dengan banyak hal, saya sangat menyadari bahwa penting untuk mempunyai sifat persistensi, selain motivasi. Karena berdasarkan [referensi](https://jurnal.stiaindragiri.ac.id/site/index.php/jiaganis/article/view/21), motivasi adalah sesuatu yang membangkitkan dan mengarahkan seseorang. Sedangkan persistensi adalah usaha terus-menerus seseorang menuju suatu tujuan.
 
@@ -125,3 +126,5 @@ Setiap orang mempunyai perlakuan yang berbeda, begitu juga dengan dosen. Ada dos
 Terima kasih bagi yang sudah tersasar ke sini dan membaca curahan hati penulis hehe. Semoga Anda diberikan kesehatan dan rezeki yang berkah! Aamiin.
 
 Sekian. Salam.
+
+*Credit:* Photo by <a href="https://unsplash.com/@jccards?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Marek Studzinski</a> on <a href="https://unsplash.com/photos/two-men-shaking-hands-over-a-wooden-object--SydYyAP3d4?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>

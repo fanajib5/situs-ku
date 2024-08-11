@@ -6,74 +6,79 @@ author: "Faiq Najib"
 date: 2023-07-30T20:14:01.039+07:00
 lastmod: 2023-07-23T11:58:34.039+07:00
 draft: false
-toc: true
+toc: false
 comments: true
-images:
-  - let-say-it-is-cloud.webp
+feature_image: /images/let-say-it-is-cloud.webp
+# images:
+  # - let-say-it-is-cloud.webp
 tags:
   - catatan
   - vps
   - linux
 ---
 
-![Header image for cloud VPS](let-say-it-is-cloud.webp)
+Keisengan saya yang ingin tahu rasanya punya *server* atau peladen sendiri dan di jaringannya orang lain (alias *cloud*).
+<!--more-->
+---
 
-_Nganu_, jadi maksudnya adalah beberapa tahun lalu saya pernah iseng _wal_ coba membeli layanan [VPS](https://www.hostinger.co.id/tutorial/apa-itu-vps) dari [DigitalOcean](https://www.digitalocean.com/)[^1]. Alasannya ya... nggak ada. Namanya juga iseng, kenapa harus ada alasan hehe~
+*Nganu*, jadi maksudnya adalah beberapa tahun lalu saya pernah iseng *wa* coba membeli layanan [VPS](https://www.hostinger.co.id/tutorial/apa-itu-vps) dari [DigitalOcean](https://www.digitalocean.com/)[^1]. Alasannya ya... nggak ada. Namanya juga iseng, kenapa harus ada alasan hehe~
 
-Singkat cerita, VPS dari DO atau DigitalOcean itu belum sampai sebulan dan sudah saya akhiri. Setelah beberapa purnama dan tersasar ke sana-sini[^2], akhirnya pilihan jatuh kepada [Hetzner](https://www.hetzner.com/)[^1]. Sebuah penyedia _cloud server_ yang kata orang-orang cukup sulit untuk melakukan pendaftara. Nyatanya ya, memang! Hahaha.
+Singkat cerita, VPS dari DO atau DigitalOcean itu belum sampai sebulan dan sudah saya akhiri. Setelah beberapa purnama dan tersasar ke sana-sini[^2], akhirnya pilihan jatuh kepada [Hetzner](https://www.hetzner.com/)[^1]. Sebuah penyedia *cloud server* yang kata orang-orang cukup sulit untuk melakukan pendaftara. Nyatanya ya, memang! Hahaha.
 
 Singkat cerita, saat itu saya belum tahu apa-apa pun penasaran mengikuti [tutorial ini](https://dev.to/styxlab/ghost-cms-on-hetzner-cloud-1dji). Bermula dari istilah [Jamstack](https://jamstack.org/) yang baru saya ketahui dengan sangat prematur membawa saya ke pertanyaan,
 
-> Bagaimana kalau _static site_ bisa direkayasa agar tetap mengonsumsi data yang dinamis? <cite>penulis yang belajar ilmu _web_ secara cabutan[^3]</cite>
+> Bagaimana kalau *static site* bisa direkayasa agar tetap mengonsumsi data yang dinamis?
+>
+> <cite>penulis yang belajar ilmu *web* secara cabutan[^3]</cite>
 
-Tanpa _fa-fi-fu was-wes-wos_, saya langsung daftar akun dan ~~membeli~~ menyewa VPS _(yang termurah dong)_ milik Hetzner. Saya pun mengikuti tutorial itu tadi dengan rajin. Satu demi satu segala halangan _rintangan membentang, tak jadi masalah dan tak kan jadi beban pikiran_&mdash;saya _googling_ mencari solusinya semaksimal mungkin.
+Tanpa *fa-fi-fu was-wes-wos*, saya langsung daftar akun dan ~~membeli~~ menyewa VPS *(yang termurah dong)* milik Hetzner. Saya pun mengikuti tutorial itu tadi dengan rajin. Satu demi satu segala halangan *rintangan membentang, tak jadi masalah dan tak kan jadi beban pikiran*&mdash;saya *googling* mencari solusinya semaksimal mungkin.
 
-Hari-hari pun terbagi dengan urusan kerjaan, urusan hati&mdash;_ehem_ perut dan urusan server Hetzner tadi. Hingga suatu waktu saya mengikuti bisikan gaib di telinga. Ya, saya _mundung_/_nggondok_/ngambek/merajuk dan tida melanjutkan rasa penasaran tadi hahaha.
+Hari-hari pun terbagi dengan urusan kerjaan, urusan hati&mdash;*ehem* perut dan urusan server Hetzner tadi. Hingga suatu waktu saya mengikuti bisikan gaib di telinga. Ya, saya *mundung*/*nggondok*/ngambek/merajuk dan tida melanjutkan rasa penasaran tadi hahaha.
 
-VPS Hetzner itu pun akhirnya terbengkalai. Hingga sebuah _email_ aneh masuk. Isinya memberitahukan bahwa alamat tagian (_invoices_) saya sudah berganti. _Ja*cok_. Saya baru tahu rasanya kena retas.
+VPS Hetzner itu pun akhirnya terbengkalai. Hingga sebuah *email* aneh masuk. Isinya memberitahukan bahwa alamat tagian (*invoices*) saya sudah berganti. *Ja*cok*. Saya baru tahu rasanya kena retas.
 
 {{< figure src="hetzner-account-got-hacked.webp" width="90%" alt="info akun hetzner saya yang diretas melalui email" caption="ancaman kartu debit online hahaha" >}}
 
-Beruntung tim _support_ sangat tanggap saat saya mengirim email untuk melaporkan insiden itu. Mereka akhirnya membalas: "_As your account got hacked and you had no products (except the ones ordered by the hacker) we have cancelled your account._"
+Beruntung tim *support* sangat tanggap saat saya mengirim email untuk melaporkan insiden itu. Mereka akhirnya membalas: "*As your account got hacked and you had no products (except the ones ordered by the hacker) we have cancelled your account.*"
 
-Alhamdulillah debit _online_ saya masih aman. Ternyata berbagai peringatan tentang kombinasi password yang susah ditebak[^4] memang benar adanya, dan sangat bermanfaat.
+Alhamdulillah debit *online* saya masih aman. Ternyata berbagai peringatan tentang kombinasi password yang susah ditebak[^4] memang benar adanya, dan sangat bermanfaat.
 
 OK! Jadi intinya, tulisan saya tadi tidak ada intinya dan tidak nyambung secara langsung dengan postingan ini hehe.
 
-## Pilih dan _set up_ VPS
+## Pilih dan *set up* VPS
 
-Tahun ini, saya balikan lagi dengan Hetzner hehe. Sebelumnya juga, saya sudah 3x mengulangi untuk mendaftar akun Hetzner baik dengan _email_ yang sama, pun _email_ yang berbeda tetapi semuanya ditolak. Nah, tapi semuanya teratasi setalah komplain terkait akun lama saya _suspended_ karena diretas. Dan, _fualla_ akun saya kembali aktif~~
+Tahun ini, saya balikan lagi dengan Hetzner hehe. Sebelumnya juga, saya sudah 3x mengulangi untuk mendaftar akun Hetzner baik dengan *email* yang sama, pun *email* yang berbeda tetapi semuanya ditolak. Nah, tapi semuanya teratasi setalah komplain terkait akun lama saya *suspended* karena diretas. Dan, *fualla* akun saya kembali aktif~~
 
 Alhasil, sebuah VPS berjenis [CAX11](https://www.hetzner.com/cloud#pricing) yang ditenagai [Ampere® Altra® processors](https://amperecomputing.com/products/processors) pun berhasil saya sewa. Harganya, yaa murah kok dibandingkan biaya wifi bulanan.
 
-VPS pun aktif dan saya segera mengatur konfigurasinya lalu melakukan _login_.
+VPS pun aktif dan saya segera mengatur konfigurasinya lalu melakukan *login*.
 
-Jika pada perangkat Windows, akses VPS dapat melalui aplikasi [PuTTY](https://www.putty.org/). _Download_ dan lakukan seperti biasa, _next, next,_ dan _next_ sampe instalasinya selesai.
+Jika pada perangkat Windows, akses VPS dapat melalui aplikasi [PuTTY](https://www.putty.org/). *Download* dan lakukan seperti biasa, *next, next,* dan *next* sampe instalasinya selesai.
 
-### _Login_ pada VPS
+### *Login* pada VPS
 
-Setelah ter-_install_ dengan benar lakukan [langkah](https://www.hostinger.com/tutorials/getting-started-with-vps-hosting#2_Log_Into_Your_VPS_Using_Secure_Shell_SSH) berikut:
+Setelah ter-*install* dengan benar lakukan [langkah](https://www.hostinger.com/tutorials/getting-started-with-vps-hosting#2_Log_Into_Your_VPS_Using_Secure_Shell_SSH) berikut:
 
 1. Buka aplikasi PuTTY.
-2. Salin _IP Address_ dari Cloud Console, sesuaikan mau pakai ```IPv4```[^5] atau ```IPv6```[^5]. Kemudian biarkan port tetap ```22```.
-3. Tempel _IP Address_ tadi ke kolom pada PuTTY dan klik tombol ```Open```. Lalu akan muncul _terminal/CMD window_.
-4. [Masukkan](https://www.digitalocean.com/community/tutorials/how-to-log-into-a-vps-with-putty-windows-users) _username_ dan _password_ dari akun ```root``` VPS. Perhatikan bahwa _password_ yang diketik tidak muncul pada terminal PuTTY.
+2. Salin *IP Address* dari Cloud Console, sesuaikan mau pakai ```IPv4```[^5] atau ```IPv6```[^5]. Kemudian biarkan port tetap ```22```.
+3. Tempel *IP Address* tadi ke kolom pada PuTTY dan klik tombol ```Open```. Lalu akan muncul *terminal/CMD window*.
+4. [Masukkan](https://www.digitalocean.com/community/tutorials/how-to-log-into-a-vps-with-putty-windows-users) *username* dan *password* dari akun ```root``` VPS. Perhatikan bahwa *password* yang diketik tidak muncul pada terminal PuTTY.
 
-Selain itu, bisa juga _login_ melalui _terminal/CMD window_ dengan [langkah](https://www.domainesia.com/panduan/cara-remote-vps/#Cara_Remote_Cloud_VPS_via_SSH_melalui_Terminal_Linux) berikut:
+Selain itu, bisa juga *login* melalui *terminal/CMD window* dengan [langkah](https://www.domainesia.com/panduan/cara-remote-vps/#Cara_Remote_Cloud_VPS_via_SSH_melalui_Terminal_Linux) berikut:
 
 1. Buka terminal dan ketik ```ssh username@ip_address_nya```.
-2. Tunggu sejenak dan tampilan _terminal_ akan meminta untuk memasukkan _password_ dari _username_ yang akan mengakses VPS tersebut.
+2. Tunggu sejenak dan tampilan *terminal* akan meminta untuk memasukkan *password* dari *username* yang akan mengakses VPS tersebut.
 
-Jika menggunakan [Ubuntu](https://ubuntu.com/download), maka lakukan _update_ dan _upgrade_ pada _package_ dari VPS dengan perintah:
+Jika menggunakan [Ubuntu](https://ubuntu.com/download), maka lakukan *update* dan *upgrade* pada *package* dari VPS dengan perintah:
 
 ```bash
 sudo apt update
 sudo apt upgrade
 ```
 
-Jika VPS meminta konfirmasi, maka ketik ```-y``` lalu tunggu hingga selesai. Ikuti jika VPS meminta untuk melakukan _reboot_.
+Jika VPS meminta konfirmasi, maka ketik ```-y``` lalu tunggu hingga selesai. Ikuti jika VPS meminta untuk melakukan *reboot*.
 
-### _Set up firewall_ VPS
+### *Set up firewall* VPS
 
 Pada Ubuntu, lakukan langkah berikut:
 
@@ -83,50 +88,50 @@ Pada Ubuntu, lakukan langkah berikut:
    sudo ufw enable
    ```
 
-2. Jika VPS mengembalikan respons bahwa _command_ tidak dikenali, maka _install_ dahulu,
+2. Jika VPS mengembalikan respons bahwa *command* tidak dikenali, maka *install* dahulu,
 
    ```bash
    sudo apt-get install ufw
    ```
 
-3. Jika sudah ter-_install_, maka lakukan kembali langkah pertama.
-4. Cek status _firewall_,
+3. Jika sudah ter-*install*, maka lakukan kembali langkah pertama.
+4. Cek status *firewall*,
 
    ```bash
    sudo ufw status
    ```
 
-5. Tambahkan _rule_ sesuai [apa yang dibutuhkan](https://www.digitalocean.com/community/tutorials/how-to-set-up-a-firewall-with-ufw-on-ubuntu-20-04).
+5. Tambahkan *rule* sesuai [apa yang dibutuhkan](https://www.digitalocean.com/community/tutorials/how-to-set-up-a-firewall-with-ufw-on-ubuntu-20-04).
 
-### _Set up_ aplikasi sesuai apa yang dibutuhkan
+### *Set up* aplikasi sesuai apa yang dibutuhkan
 
-Karena pada dasarnya VPS ini akan digunakan sebagai tempat _hosting_ proyek agar bisa di-_demo_-kan untuk kepentingan portfolio pribadi, maka akan di-_install_ beberapa aplikasi atau _package_.
+Karena pada dasarnya VPS ini akan digunakan sebagai tempat *hosting* proyek agar bisa di-*demo*-kan untuk kepentingan portfolio pribadi, maka akan di-*install* beberapa aplikasi atau *package*.
 
-Karena tidak ada panduan pasti dan untuk berjaga-jaga, saya _install_ banyak _package_ dan aplikasi hahaha.
+Karena tidak ada panduan pasti dan untuk berjaga-jaga, saya *install* banyak *package* dan aplikasi hahaha.
 
-#### LEMP _stack_
+#### LEMP *stack*
 
-_Stack_ yang digunakan di dunia per-kodingan, utamanya _website_, seteau saya (tanpa data yak!) adalah LAMP dan LEMP.
+*Stack* yang digunakan di dunia per-kodingan, utamanya *website*, seteau saya (tanpa data yak!) adalah LAMP dan LEMP.
 
 [LAMP](https://www.digitalocean.com/community/tutorials/how-to-install-linux-apache-mysql-php-lamp-stack-ubuntu-18-04#introduction) adalah kepanjangan dari Linux, Apache, MySQL, PHP. Sedangkan [LEMP](https://www.digitalocean.com/community/tutorials/how-to-install-linux-nginx-mysql-php-lemp-stack-on-ubuntu-22-04#introduction) adalah kepanjangan dari Linux, Nginx, MySQL, PHP.
 
-Kebetulan,saya `~~**iseng lagi**~~ memilih _stack_ LEMP ini. Oh lupa, ada alasannya _ding_. VPS ini sudah saya rencanakan sebagai subdomain website ini, yaitu [```portfolio.najib.id```](https://portfolio.najib.id) hehehe. _Anyway_, berikut langkah-langkahnya.
+Kebetulan,saya `~~**iseng lagi**~~ memilih *stack* LEMP ini. Oh lupa, ada alasannya *ding*. VPS ini sudah saya rencanakan sebagai subdomain website ini, yaitu [```portfolio.najib.id```](https://portfolio.najib.id) hehehe. *Anyway*, berikut langkah-langkahnya.
 
-##### _Install_ NGINX _web server_
+##### *Install* NGINX *web server*
 
-_Update_ VPS terlebih dahulu dan **bisa** ditambahkan ```-y``` untuk langsung konfirmasi _package_ yang akan di-_update_.
+*Update* VPS terlebih dahulu dan **bisa** ditambahkan ```-y``` untuk langsung konfirmasi *package* yang akan di-*update*.
 
 ```bash
 sudo apt update -y
 ```
 
-Lalu, lanjutkan _install_ [NGINX](https://www.digitalocean.com/community/tutorials/how-to-install-linux-nginx-mysql-php-lemp-stack-on-ubuntu-22-04#step-1-installing-the-nginx-web-server).
+Lalu, lanjutkan *install* [NGINX](https://www.digitalocean.com/community/tutorials/how-to-install-linux-nginx-mysql-php-lemp-stack-on-ubuntu-22-04#step-1-installing-the-nginx-web-server).
 
 ```bash
 sudo apt install nginx -y
 ```
 
-Setelah instalasi NGINX selesai dan ```ufw``` sudah diizinkan dari langkah sebelumnya, selanjutnya cek aplikasi yang dapat dimasukkan ke _rule_ ```ufw```.
+Setelah instalasi NGINX selesai dan ```ufw``` sudah diizinkan dari langkah sebelumnya, selanjutnya cek aplikasi yang dapat dimasukkan ke *rule* ```ufw```.
 
 ```bash
 sudo ufw app list
@@ -143,7 +148,7 @@ Available applications:
   OpenSSH
 ```
 
-Izinkan port ```80``` yang secara _default_ sebagai port yang menerima [akses HTTP](https://dewabiz.com/port-yang-digunakan-web-server/).
+Izinkan port ```80``` yang secara *default* sebagai port yang menerima [akses HTTP](https://dewabiz.com/port-yang-digunakan-web-server/).
 
 ```bash
 sudo ufw allow 'Nginx HTTP'
@@ -169,11 +174,11 @@ OpenSSH (v6)               ALLOW       Anywhere (v6)
 Nginx HTTP (v6)            ALLOW       Anywhere (v6)
 ```
 
-Cek hasil konfigurasi NGINX pada peramban (_browser_) dengan memasukkan ```http://ip_address``` atau ```domain_qoeh.com```. Hasilnya adalah tulisan _Welcome to nginx!_.
+Cek hasil konfigurasi NGINX pada peramban (*browser*) dengan memasukkan ```http://ip_address``` atau ```domain_qoeh.com```. Hasilnya adalah tulisan *Welcome to nginx!*.
 
-##### _Install_ MariaDB RDBMS
+##### *Install* MariaDB RDBMS
 
-Karena masih dalam waktu yang berdekatan, maka bisa langsung _install package_ MariaDB tanpa harus melakukan _update package_ terlebih dahulu.
+Karena masih dalam waktu yang berdekatan, maka bisa langsung *install package* MariaDB tanpa harus melakukan *update package* terlebih dahulu.
 
 ```bash
 sudo apt install mariadb-server
@@ -191,33 +196,33 @@ Kemudian, lakukan konfigurasi pada MariaDB.
 sudo mysql_secure_installation
 ```
 
-Sesuaikan _prompt_ dengan [apa yang dibutuhkan](https://www.digitalocean.com/community/tutorials/how-to-install-mariadb-on-ubuntu-20-04#step-2-configuring-mariadb).
+Sesuaikan *prompt* dengan [apa yang dibutuhkan](https://www.digitalocean.com/community/tutorials/how-to-install-mariadb-on-ubuntu-20-04#step-2-configuring-mariadb).
 
-Selanjutnya, saya memilih opsi untuk menambahkan _user_ selain _root_.
+Selanjutnya, saya memilih opsi untuk menambahkan *user* selain *root*.
 
 ```bash
 sudo mariadb
 ```
 
-Setelah masuk ke _prompt_ ```MariaDB&nbsp;[(none)]>```, buat _user_ baru tersebut dan menyetel _privilege_-nya.
+Setelah masuk ke *prompt* ```MariaDB&nbsp;[(none)]>```, buat *user* baru tersebut dan menyetel *privilege*-nya.
 
 ```bash
 GRANT ALL ON *.* TO 'budi'@'localhost' IDENTIFIED BY 'BudiTanpoHutang619' WITH GRANT OPTION;
 ```
 
-Lakukan _flush privileges_ untuk memastikan konfigurasi _user_ baru tersebut.
+Lakukan *flush privileges* untuk memastikan konfigurasi *user* baru tersebut.
 
 ```bash
 FLUSH PRIVILEGES;
 ```
 
-OK! Keluar dari _prompt_ MariaDB
+OK! Keluar dari *prompt* MariaDB
 
 ```bash
 exit
 ```
 
-##### _Install_ PHP
+##### *Install* PHP
 
 Lakukan [instalasi PHP](https://www.digitalocean.com/community/tutorials/how-to-install-linux-nginx-mysql-php-lemp-stack-on-ubuntu-22-04#step-3-installing-php) dengan versi sesuai apa yang dibutuhkan.
 
@@ -227,7 +232,7 @@ sudo apt install php8.1-fpm php-mysql
 
 ##### Konfigurasi NGINX agar menggunakan PHP
 
-Pertama-tama, buat direktori _root web_ dengan domain yang dinginkan, misalnya adalah [```portfolio.najib.id```](https://portfolio.najib.id) sebagai nama _folder_-nya.
+Pertama-tama, buat direktori *root web* dengan domain yang dinginkan, misalnya adalah [```portfolio.najib.id```](https://portfolio.najib.id) sebagai nama *folder*-nya.
 
 ```bash
 sudo mkdir /var/www/portfolio.najib.id
@@ -245,7 +250,7 @@ Lalu, buat konfigurasi NGINX pada direktori ```sites_available``` melalui ```nan
 sudo nano /etc/nginx/sites-available/portfolio.najib.id
 ```
 
-Pada _file_ konfigurasi domain yang baru dibuat tersebut, isi dengan konten seperti berikut.
+Pada *file* konfigurasi domain yang baru dibuat tersebut, isi dengan konten seperti berikut.
 
 ```bash {linenos=false,hl_lines=["3-23"]}
 # located at /etc/nginx/sites-available/portfolio.najib.id
@@ -275,13 +280,13 @@ server {
 
 Selesai mengubah, keluar dari ```nano``` editor dengan ```CTRL + X``` lalu ```Y``` unguk konfirmasi menyimpan file yang diubah tadi, dan tekan ```ENTER```.
 
-Buat _symbolic link_ dari direktori tadi.
+Buat *symbolic link* dari direktori tadi.
 
 ```bash
 sudo ln -s /etc/nginx/sites-available/portfolio.najib.id /etc/nginx/sites-enabled/
 ```
 
-Putuskan sambungan _symbolic link_ konfigurasi _default_.
+Putuskan sambungan *symbolic link* konfigurasi *default*.
 
 ```bash
 sudo unlink /etc/nginx/sites-enabled/default
@@ -293,20 +298,20 @@ Lalu cek konfigurasi dengan mengetesnya.
 sudo nginx -t
 ```
 
-Jika berhasil, akan muncul hasil seperti berikut. Jika belum berhasil, berarti ada port ```80``` dari konfigurasi lainnya yang ikut _'ditarik'_ oleh NGINX.
+Jika berhasil, akan muncul hasil seperti berikut. Jika belum berhasil, berarti ada port ```80``` dari konfigurasi lainnya yang ikut *'ditarik'* oleh NGINX.
 
 ```bash
 nginx: the configuration file /etc/nginx/nginx.conf syntax is ok
 nginx: configuration file /etc/nginx/nginx.conf test is successful
 ```
 
-_Restart_ NGINX untuk menerapka perubahan konfigurasi.
+*Restart* NGINX untuk menerapka perubahan konfigurasi.
 
 ```bash
 sudo systemctl reload nginx
 ```
 
-Buat alaman awal dari _website_ saat _IP Address_ atau _domain_ diakses.
+Buat alaman awal dari *website* saat *IP Address* atau *domain* diakses.
 
 ```bash
 nano /var/www/portfolio.najib.id/index.html
@@ -331,25 +336,25 @@ Isi file ```index.html``` tersebut contohnya seperti ini
 </html>
 ```
 
-Cek hasilnya pada peramban (_browser_) dengan memasukkan ```http://ip_address``` atau ```domain_qoeh.com```.
+Cek hasilnya pada peramban (*browser*) dengan memasukkan ```http://ip_address``` atau ```domain_qoeh.com```.
 
 #### PostgreSQL Database
 
-_Install package_ [PostgreSQL](https://www.digitalocean.com/community/tutorials/how-to-install-postgresql-on-ubuntu-22-04-quickstart) dengan perintah berikut.
+*Install package* [PostgreSQL](https://www.digitalocean.com/community/tutorials/how-to-install-postgresql-on-ubuntu-22-04-quickstart) dengan perintah berikut.
 
 ```bash
 sudo apt install postgresql postgresql-contrib
 ```
 
-Instalasi tersbut akan membuat _user_ dengan nama ```postgres``` dengan _role root_ pada PostgreSQL.
+Instalasi tersbut akan membuat *user* dengan nama ```postgres``` dengan *role root* pada PostgreSQL.
 
-Ketika ingin membuat _user_ atau _role_ yang baru, maka dapat digunakan perintah berikut.
+Ketika ingin membuat *user* atau *role* yang baru, maka dapat digunakan perintah berikut.
 
 ```bash
 sudo -u postgres createuser --interactive
 ```
 
-Dan akan muncul ```prompt``` pada _terminal_ yang dapat diisi sesuai kebutuhan.
+Dan akan muncul ```prompt``` pada *terminal* yang dapat diisi sesuai kebutuhan.
 
 ```bash {linenos=false,hl_lines=[1]}
 Output
@@ -365,31 +370,31 @@ Pertama-tama, masukkan kunci publik ```GPG``` melalui perintah ```curl```.
 curl -fsSL https://www.mongodb.org/static/pgp/server-4.4.asc | sudo apt-key add -
 ```
 
-Lanjutkan dengan mendaftarkan _package_ MongoDB pada ```apt```. Di sini saya hanya menggunakan opsi ```arm64``` yang mana menyesuaikan jenis _processor_ yaitu ARM64.
+Lanjutkan dengan mendaftarkan *package* MongoDB pada ```apt```. Di sini saya hanya menggunakan opsi ```arm64``` yang mana menyesuaikan jenis *processor* yaitu ARM64.
 
 ```bash
 echo "deb [ arch=arm64 ] https://repo.mongodb.org/apt/ubuntu focal/mongodb-org/4.4 multiverse" | sudo tee /etc/apt/sources.list.d/mongodb-org-4.4.list
 ```
 
-Perbarui _package_ pada ```apt```.
+Perbarui *package* pada ```apt```.
 
 ```bash
 sudo apt update
 ```
 
-Baru kemudian _install_ MongoDB.
+Baru kemudian *install* MongoDB.
 
 ```bash
 sudo apt install mongodb-org
 ```
 
-Jalankan _service_ MongoDB.
+Jalankan *service* MongoDB.
 
 ```bash
 sudo systemctl start mongod.service
 ```
 
-Dan, cek _status_ dari MongoDB.
+Dan, cek *status* dari MongoDB.
 
 ```bash
 sudo systemctl status mongod
@@ -430,11 +435,11 @@ For mongosh info see: https://docs.mongodb.com/mongodb-shell/
 }
 ```
 
-## _Troubleshooting_
+## *Troubleshooting*
 
-Untuk kebutuhan koneksi _database_ secara _remote_ dari perangkat pribadi, maka dapat melakukan pengaturan koneksi melalui ```bind_address=0.0.0.0``` dan menyetel _firewall_. Banyak laah tutorialnya di mbah Google hehehe.
+Untuk kebutuhan koneksi *database* secara *remote* dari perangkat pribadi, maka dapat melakukan pengaturan koneksi melalui ```bind_address=0.0.0.0``` dan menyetel *firewall*. Banyak laah tutorialnya di mbah Google hehehe.
 
-Pada kondisi ini, saya mendapat galat bahwa koneksi _remote_ database tidak bisa dilakukan meskipun konfigurasi sudah sesuai dengan apa yang ada di internet. Ternyata solusi yang harus dilakukan adalah mengatur _firewall_ pada _console dashboard_ Hetzner **juga**. Itu untuk Hetzner, saya tidak tahu bagaimana _provider cloud_ lainnya. 
+Pada kondisi ini, saya mendapat galat bahwa koneksi *remote* database tidak bisa dilakukan meskipun konfigurasi sudah sesuai dengan apa yang ada di internet. Ternyata solusi yang harus dilakukan adalah mengatur *firewall* pada *console dashboard* Hetzner **juga**. Itu untuk Hetzner, saya tidak tahu bagaimana *provider cloud* lainnya.
 
 Contohnya pada link[https://console.hetzner.cloud/projects/9922305/firewalls/199524/rules](https://console.hetzner.cloud/projects/9922305/firewalls/199524/rules), ini hanya sekedar link contoh.
 
@@ -442,22 +447,22 @@ Contohnya pada link[https://console.hetzner.cloud/projects/9922305/firewalls/199
 
 ## Pelajaran yang Dapat Diambil
 
-OK! Pembelian atau sewa layanan VPS/_cloud_ cukup _tricky_ karena bisa jadi _provider_ cuma memberikan _gimmick_ dan bukan hasil nyata yang dijanjikan. Itu adalah menurut penuturan beberapa _thread_ dari forum [LowEndTalk](https://lowendtalk.com/). Temen-temen bisa cari sendiri dari forum tersbut.
+OK! Pembelian atau sewa layanan VPS/*cloud* cukup *tricky* karena bisa jadi *provider* cuma memberikan *gimmick* dan bukan hasil nyata yang dijanjikan. Itu adalah menurut penuturan beberapa *thread* dari forum [LowEndTalk](https://lowendtalk.com/). Temen-temen bisa cari sendiri dari forum tersbut.
 
-Instalasi _package_ pada VPS mempunyai perintah yang berbeda-beda. Karena bergantung _flavors_ dari OS Linux itu sendiri. Kalau _distro_ Ubuntu menggunakan ```apt```, maka mungkin akan berbeda dengan _distro_ lainnya.
+Instalasi *package* pada VPS mempunyai perintah yang berbeda-beda. Karena bergantung *flavors* dari OS Linux itu sendiri. Kalau *distro* Ubuntu menggunakan ```apt```, maka mungkin akan berbeda dengan *distro* lainnya.
 
-_Password_ root VPS dapat di-_reset_ dari _console dashboard_ akun _provider_ VPS.
+*Password* root VPS dapat di-*reset* dari *console dashboard* akun *provider* VPS.
 
-Dan, Hetzner sepertinya punya _firewall_ bertingkat, mulai dari _console dashboard_-nya dan _firewall_ pada VPS-nya itu sendiri. Entah saya yang kurang pengetahuan atau kurang utak-atik VPS sendiri, namun itu adalah impresi saya hehe.
+Dan, Hetzner sepertinya punya *firewall* bertingkat, mulai dari *console dashboard*-nya dan *firewall* pada VPS-nya itu sendiri. Entah saya yang kurang pengetahuan atau kurang utak-atik VPS sendiri, namun itu adalah impresi saya hehe.
 
-Alasan saya memakai NGINX adalah sekaligus sebagai _reverse proxy_ karena _domain_ utama saya sudah melalui [Netlify](https://netlify.com) yang meng-_serve website_ statis [ini](https://najib.id). Sedangkan NGINX akan berperan untuk me-_route_ ketika _subdomain_ [portfolio.najib.id](https://portfolio.najib.id) diakses oleh pengguna internet. Itulah rencana saya, setidaknya menurut informasi dan pengetahuan yang saya dapatkan dari Google hehe.
+Alasan saya memakai NGINX adalah sekaligus sebagai *reverse proxy* karena *domain* utama saya sudah melalui [Netlify](https://netlify.com) yang meng-*serve website* statis [ini](https://najib.id). Sedangkan NGINX akan berperan untuk me-*route* ketika *subdomain* [portfolio.najib.id](https://portfolio.najib.id) diakses oleh pengguna internet. Itulah rencana saya, setidaknya menurut informasi dan pengetahuan yang saya dapatkan dari Google hehe.
 
-Terima kasih bagi yang sudah tersasar ke _section_ catatan ini dan membacanya. Semoga catatan ini bermanfaat bagi Anda.
+Terima kasih bagi yang sudah tersasar ke *section* catatan ini dan membacanya. Semoga catatan ini bermanfaat bagi Anda.
 
 Sekian. Salam.
 
-[^1]: _Link_ tidak mengandung kode _referral_ kok.
+[^1]: *Link* tidak mengandung kode *referral* kok.
 [^2]: [Situs](https://lowendbox.com/) [forum](https://lowendtalk.com/) unik yang baru saya temui, hingga situs [pembanding](https://www.vpsbenchmarks.com/) VPS.
-[^3]: Ilmu cabutan adalah... hmm... sepertinya saat _googling_, tidak ada penjelasan yang pasti. Tapi, saya pernah menemukan sebuah postingan di LinkedIn (maaf lagi, saya lupa menyimpan postingan itu) yang membahas kalau ilmu cabutan itu ilmu-ilmu yang dipelajari dengan tidak berurutan dan diambil dari beragam sumber tanpa tuntunan/panduan guru yang pasti. Kurang lebih seperti itu seingat saya hehe.
-[^4]: Kombinasi password yang dianggap _Good_ menurut [artikel](https://security.harvard.edu/use-strong-passwords#block-boxes-1574263848) dari Harvard University adalah kombinasi huruf besar, huruf kecil, angka dan simbol. Misalkan, ```budi@TanpoHutang619```.
-[^5]: [Perbedaannya](https://www.trivusi.web.id/2022/09/mengenal-ipv4-dan-ipv6.html) [yaitu](https://pandi.id/blog/mengenal-ipv4-dan-ipv6), IPv4 adalah _IP Addrees_ versi lama yang biasanya digunakan sampai sekarang bahkan saat postingan ini ditulis. Sedangkan IPv6 adalah jenis _IP Address_ yang lebih baru. Perlu diperhatikan bahwa tidak semua penyedia internet/wifi di Indonesia menyediakan IPv6, jadi pilihlah VPS dengan bijak :)
+[^3]: Ilmu cabutan adalah... hmm... sepertinya saat *googling*, tidak ada penjelasan yang pasti. Tapi, saya pernah menemukan sebuah postingan di LinkedIn (maaf lagi, saya lupa menyimpan postingan itu) yang membahas kalau ilmu cabutan itu ilmu-ilmu yang dipelajari dengan tidak berurutan dan diambil dari beragam sumber tanpa tuntunan/panduan guru yang pasti. Kurang lebih seperti itu seingat saya hehe.
+[^4]: Kombinasi password yang dianggap *Good* menurut [artikel](https://security.harvard.edu/use-strong-passwords#block-boxes-1574263848) dari Harvard University adalah kombinasi huruf besar, huruf kecil, angka dan simbol. Misalkan, ```budi@TanpoHutang619```.
+[^5]: [Perbedaannya](https://www.trivusi.web.id/2022/09/mengenal-ipv4-dan-ipv6.html) [yaitu](https://pandi.id/blog/mengenal-ipv4-dan-ipv6), IPv4 adalah *IP Addrees* versi lama yang biasanya digunakan sampai sekarang bahkan saat postingan ini ditulis. Sedangkan IPv6 adalah jenis *IP Address* yang lebih baru. Perlu diperhatikan bahwa tidak semua penyedia internet/wifi di Indonesia menyediakan IPv6, jadi pilihlah VPS dengan bijak :)

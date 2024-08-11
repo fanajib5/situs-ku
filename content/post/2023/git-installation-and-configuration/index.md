@@ -6,17 +6,20 @@ author: "Faiq Najib"
 date: 2023-07-31T22:00:01.039+07:00
 lastmod: 2023-07-23T11:58:34.039+07:00
 draft: false
-toc: true
+toc: false
 comments: true
-images:
-  - git-and-github_50_1_80.webp
+# images:
+#  - git-and-github_50_1_80.webp
 tags:
   - catatan
   - git
   - github
+feature_image: /images/git-and-github_50_1_80.webp
 ---
 
-![Logo Git-scm dan GitHub](git-and-github_50_1_80.webp)
+Catatan yang berisi bagaimana cara instalasi, konfigurasi dan contohnya dari Git dan Github.
+<!--more-->
+---
 
 ## Perkenalan
 
@@ -41,11 +44,13 @@ Ikuti langkah [selanjutnya](https://www.nesabamedia.com/cara-install-git-di-wind
 <summary><strong>Linux (Ubuntu)</strong></summary>
 
 Lakukan _update_ dan _upgrade_ pada sistem dengan perintah berikut:
+
 ```bash
 sudo apt update && sudo apt upgrade -y
 ```
 
 Install _package_ Git:
+
 ```bash
 sudo add-apt-repository ppa:git-core/ppa
 sudo apt update
@@ -53,6 +58,7 @@ sudo apt install Git
 ```
 
 Verifikasi versi Git dan pastikan bahwa **minimal** versi 2.28[^1]
+
 ```bash
 git --version
 ```

@@ -2,6 +2,7 @@
 author = "Hugo Authors"
 title = "Image Test"
 date = "2020-06-22"
+draft = true
 description = "Testing an image in a post folder"
 feature_image = "/post/image-test/images/manja-vitolic-gKXKBY-C-Dk-unsplash.jpg"
 +++
